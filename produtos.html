@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Produtos - Full Stack Eletro</title>
+    <link rel="stylesheet" href="./CSS/estilo.css">
+    <script src="./js/funcoes.js"></script>
+</head>
+
+<body>
+    <!-- Inicio do menu superior -->
+    <nav id="menubloco">
+
+        <a class="logo3d" href="index.html">Full Stack Eletro</a>
+        <a href="produtos.html">Nossos Produtos</a>
+        <a href="loja.html">Nossas lojas</a>
+        <a href="contato.html">Fale conosco</a>
+
+    </nav>
+<!-- Fim do menu superior -->
+ <main>
+    <br><br>
+    <h2>Produtos</h2>
+    <hr>
+<!-- Inicio tabela lateral de categorias -->
+    <aside class="categorias">
+
+        <h3> Categorias </h3>
+
+        <ol>
+            <li onclick="exibir_todos()">Todos (12)</li>
+            <li onclick="exibir_categoria('geladeira')">Geladeiras (3)</li>
+            <li onclick="exibir_categoria('fogao')">Fogões (2)</li>
+            <li onclick="exibir_categoria('microondas')">Microondas (3)</li>
+            <li onclick="exibir_categoria('lava_roupas')">Lavadora de roupas (2)</li>
+            <li onclick="exibir_categoria('lava_loucas')">Lava-louças (2)</li>   
+        </ol>
+    </aside>
+<!-- Fim tabela lateral de categorias -->
+
+<!-- Inicio tabela de produtos-->
+    <div class="produtos">
+        <div>
+        <div class="produto" id="geladeira">
+            <img class="itens" img src="imagens/produtos/geladeiraBrastempSideInverse.jpeg" width="120px" onclick="zoom(this)">
+
+            <br>
+            Geladeira Side Inverse <br>Brastemp 540 litros
+            <hr>
+            <strike>R$6.389,00</strike>
+            <br>
+            <p class="preco">R$5.019,00</p>
+            <br>
+        </div>
+        <div class="produto" id="geladeira">
+            <img class="itens" src="imagens/produtos/geladeiraBrastempBranca.jpeg" width="120px"  onclick="zoom(this)">
+
+            <br>
+            Geladeira Brastemp<br>375 litros
+            <hr>
+            <strike>R$2.086,00</strike>
+            <br>
+            <p class="preco">R$1.910,00</p>
+            <br>
+        </div>
+        <div  class="produto" id="geladeira">
+            <img class="itens" src="imagens/produtos/geladeiraBrastempPrata.jpeg" width="120px"  onclick="zoom(this)">
+
+            <br>
+            Geladeira Frost Free <br>Consul Prata 340 litros
+            <hr>
+            <strike>R$2.086,00</strike>
+            <br>
+            <p class="preco">R$1.910,00</p>
+            <br>
+        </div>
+        <div class="produto" id="fogao">
+            <img class="itens" src="imagens/produtos/fogaoBrastemp4BocasPrata.jpeg" width="120px"  onclick="zoom(this)">
+
+            <br>
+            Fogao 4 Bocas <br>Consul Inox com Mesa de Vidro
+            <hr>
+            <strike>R$1.200,90</strike>
+            <br>
+            <p class="preco">R$1.129,00</p>
+            <br>
+        </div>
+        
+            <div class="produto" id="fogao">
+                <img class="itens" src="imagens/produtos/fogaoBrastemp4BocasBranco.jpeg" width="120px"  onclick="zoom(this)">
+
+                <br>
+                Fogao de piso 4 <br>Bocas Brastemp
+                <hr>
+                <strike>R$600,00</strike>
+                <br>
+                <p class="preco">R$519,70</p>
+                <br>
+            </div>
+            <div class="produto"id="microondas">
+                <img class="itens" src="imagens/produtos/microondasConsulPrata.jpeg" width="120px"  onclick="zoom(this)">
+
+                <br>
+                Microondas Consul<br> 32 Litros Inox 220V
+                <hr>
+                <strike>R$1.200,98</strike>
+                <br>
+                <p class="preco">R$1.129,00</p>
+                <br>
+            </div>
+            <div class="produto" id="microondas">
+                <img class="itens" src="imagens/produtos/microondasPhilcoPrata.jpeg" width="120px"  onclick="zoom(this)">
+
+                <br>
+                Microondas 25L Espelhado<br> Philco 220V
+                <hr>
+                <strike>R$508,70</strike>
+                <br>
+                <p class="preco">R$464,53</p>
+                <br>
+            </div>
+            <div class="produto" id="microondas">
+                <img class="itens" src="imagens/produtos/microondasEletroluxBranco.jpeg" width="120px"  onclick="zoom(this)">
+
+                <br>
+                Forno de Microondas <br>Electrolux 20L Branco
+                <hr>
+                <strike>R$459,90</strike>
+                <br>
+                <p class="preco">R$436,05</p>
+                <br>
+            </div>
+            <div>
+                <div class="produto" id="lava_loucas">
+                    <img class="itens" src="imagens/produtos/lavaLoucaEletrolux.jpeg" width="120px"  onclick="zoom(this)">
+
+                    <br>
+                    Lava-Louça Electrolux <br>Inox
+                    <hr>
+                    <strike>R$3.599,00</strike>
+                    <br>
+                    <p class="preco">R$2.799,90</p>
+                    <br>
+                </div>
+                <div class="produto" id="lava_loucas">
+                    <img class="itens" src="imagens/produtos/lavaLoucaBrastemp.jpeg" width="120px"  onclick="zoom(this)">
+
+                    <br>
+                    Lava Louça Compacta<br> Brastemp
+                    <hr>
+                    <strike>R$1.970,50</strike>
+                    <br>
+                    <p class="preco">R$1.730,61</p>
+                    <br>
+                </div>
+                <div class="produto" id="lava_roupas">
+                    <img class="itens" src="imagens/produtos/lavaRoupasEletrolux.jpeg" width="120px"  onclick="zoom(this)">
+
+                    <br>
+                    Lavadora de Roupas <br>Brastemp 11kg
+                    <hr>
+                    <strike>R$1.699,00</strike>
+                    <br>
+                    <p class="preco">R$1.214,00</p>
+                    <br>
+                </div>
+                <div class="produto" id="lava_roupas">
+                    <img class="itens" src="imagens/produtos/lavaSecaRoupasConsul.jpeg" width="120px"  onclick="zoom(this)">
+
+                    <br>
+                    Lavadora de Roupas <br>Philco Inverter 12KG
+                    <hr>
+                    <strike>R$2.399,00</strike>
+                    <br>
+                    <p class="preco">R$2.179,00</p>
+                    <br>
+                </div>
+     </div>
+
+     <!-- Fim tabela de produtos -->
+</main>
+
+    <br><br><br><br><br><br>
+
+    <footer id="rodape">
+
+        <p id="formas_pagamento"><b>Formas de pagamento:</b></p>
+        <img src="./imagens/formas-pagamento.png">
+        <p>&copy;Recode Pro</p>
+    <p>Desenvolvido por Marcos dos Anjos Bernardes da Silva Junior</p>
+
+    </footer>
+</body>
+
+</html>
